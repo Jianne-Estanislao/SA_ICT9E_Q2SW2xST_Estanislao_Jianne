@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> OBMC Office Hours and Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/97d122d3-7288-49cb-bcdd-3c210e3366f8/OBMC+MONTESSORI+SA+1+-+AY+2026+FA.jpg);
+      background-size: cover;
+      font-family: Gill 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+      
+    }
+    .navbar {
+      background-color: #123458;
+      font-family: Gill 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .table th, .table td {
+      vertical-align: middle;
+    }
+    #box {
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #obmC {
+      background-color: #123458;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- School Navigation Bar -->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1789004299-2727.png" alt="obmc" height="50px" width=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" target="_self" style="color: white;">Enroll Now</a> <!-- href link might change depending on the html file -->
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 mb-5">
+    <div class="row g-4">
+
+      <!-- Office Hours Table -->
+      <div class="col-12">
+        <h2 class="text-center mb-4 bg-light text-dark">School Office Hours</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-border table-hover">
+            <thead class="table-primary">
+              <tr>
+                <th>Day</th>
+                <th>Office Hours</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>8:00 AM – 4:00 PM</td>
+                <td>Registrar’s Office</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>8:00 AM – 4:00 PM</td>
+                <td>Accounting Office</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>8:00 AM – 4:00 PM</td>
+                <td>Guidance Office</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>8:00 AM – 4:00 PM</td>
+                <td>Principal’s Office</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8:00 AM – 3:00 PM</td>
+                <td>Admin Office</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Page Heading + Enrollment Form -->
+      <div class="col-12">
+        <h1 class="display-4 text-center mb-4 text-white" id="obmC">
+          <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-65/school_profile/1789004299-2727.png" alt="obmc" height="100px" width="100px"> OBMC Student Enrollment Form
+        </h1>
+        <p class="text-center mb-4 text-white">Fill out the form below to enroll for the upcoming school year.</p>
+
+        <form class="border p-4 rounded" id="box">
+          <!-- Student Info -->
+          <h4 class="mb-3">Student Information</h4>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="John" required />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="birthDate" class="form-label">Birth Date</label>
+              <input type="date" class="form-control" id="birthDate" required />
+            </div>
+            <div class="col-md-4">
+              <label for="gender" class="form-label">Gender</label>
+              <select class="form-select" id="gender" required>
+                <option value="">Select...</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="gradeLevel" class="form-label">Grade Level</label>
+              <select class="form-select" id="gradeLevel" required>
+                <option value="">Select...</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <h4 class="mb-3">Contact Details</h4>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="student@example.com" required />
+          </div>
+          <div class="mb-3">
+            <label for="contactNumber" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" placeholder="0912-345-6789" required />
+          </div>
+
+          <!-- Preferences -->
+          <h4 class="mb-3">Other Information</h4>
+          <div class="mb-3">
+            <label class="form-label">Mode of Learning</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="modeLearning" id="online" value="Online" />
+              <label class="form-check-label" for="online">Online</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="modeLearning" id="faceToFace" value="Face-to-Face" />
+              <label class="form-check-label" for="faceToFace">Face-to-Face</label>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="agreeTerms" required />
+              <label class="form-check-label" for="agreeTerms">
+                I confirm that the information provided is true and complete.
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Enrollment</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="col-12">
+        <p class="text-center text-light mt-5" style="background-color: #123458">&copy; 2026 Student Enrollment Page | Juan Dela Cruz | 9-Section</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
